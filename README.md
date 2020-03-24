@@ -21,16 +21,16 @@ Inspired from https://github.com/AlanNaoto/carla-dataset-runner
 # Running
 
 * step1: Launch CarlaEU4
-```
-if you downloaded the carla pre-compiled package, navigate to the folder, open a terminal and: 
+  Navigate to the folder where carla pre compiled package is present, open a terminal and: 
 ```
   ./CarlaUE4.sh TownXX -opengl 
-
-* step2: Launch data capturing
 ```
-Navigate to the folder where the repo is cloned, open a terminal and: 
+* step2: Launch data capturing
+
+  Navigate to the folder where the repo is cloned, open a terminal and: 
 ```
   python3 main.py -ve 100 -wa 110 
+```
 
 # Data captured
 
