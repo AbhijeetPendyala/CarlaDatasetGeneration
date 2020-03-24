@@ -1,7 +1,7 @@
 # Carla-synthetic-dataset-generation
-Creating synthetic dataset for training 3D bbox module
+Creating synthetic dataset for training the 3D bbox module.
 
-Inspired from https://github.com/AlanNaoto/carla-dataset-runner
+Backbone from https://github.com/AlanNaoto/carla-dataset-runner
 
 # Setup prerequisites
 
@@ -21,21 +21,22 @@ Inspired from https://github.com/AlanNaoto/carla-dataset-runner
 # Running
 
 * step1: Launch CarlaEU4
-  Navigate to the folder where carla pre compiled package is present, open a terminal and: 
+  Navigate to the folder where carla's pre-compiled package is present: 
 ```
   ./CarlaUE4.sh TownXX -opengl 
 ```
 * step2: Launch data capturing
 
-  Navigate to the folder where the repo is cloned, open a terminal and: 
+  Navigate to the folder where the repo is cloned: 
 ```
   python3 main.py -ve 100 -wa 110 
 ```
 
 # Data captured
-  Images (RGB) and .txt files with following parameters are captured in 'Data' folder.
+
+  Illustration of the data captured in a newly created 'Data' folder.
   
-  Parameters captured in .txt file (Example):
+  Parameters :
 ```
   Type,BBox,Dimensions,Rotation_Y_(Red_Theta),Alpha_(Blue_Theta),Center_(ground_projection) 
   
@@ -45,7 +46,7 @@ Inspired from https://github.com/AlanNaoto/carla-dataset-runner
   pedestrian,[825 383 837 403],"[0.68, 0.68, 1.86]",9.286087036132812,101.291015625,"['223.223145', '133.068954', '2.079820']"
 
 ```
-   Image captured: 
+   Image : 
    
    ![sample](sample.png)
 
