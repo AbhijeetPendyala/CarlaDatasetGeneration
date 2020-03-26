@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Settings for the data capture", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-wi', '--width', default=1024, type=int, help="camera rgb and depth sensor width in pixels")
-    parser.add_argument('-he', '--height', default=768, type=int, help="camera rgb and depth sensor width in pixels")
+    parser.add_argument('-he', '--height', default=768, type=int, help="camera rgb and depth sensor height in pixels")
     parser.add_argument('-ve', '--vehicles', default=100, type=int, help="number of vehicles to spawn in the simulation")
     parser.add_argument('-wa', '--walkers', default=110, type=int, help="number of walkers to spawn in the simulation")
     args = parser.parse_args()
