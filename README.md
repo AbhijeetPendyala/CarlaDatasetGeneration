@@ -8,11 +8,17 @@ Backbone from https://github.com/AlanNaoto/carla-dataset-runner
 * Step1: 
   Python carla package and its dependencies.
   Follow this guide to install Carla via github.
+  
+ ```
   https://carla.readthedocs.io/en/latest/start_quickstart/
-
+ ```
 * Step2: 
   Clone this repo.
-  For other dependencies (to run data capturing scripts), use the requirements.txt 
+  For other dependencies (to run data capturing scripts)
+  
+ ```
+  pip install -r requirements.txt
+ ```
 
 * Step3:
   Setup the python path for the carla egg file.
